@@ -6,9 +6,9 @@
 @author         Me
 @updateURL      https://raw.githubusercontent.com/Weikardzaena/OneSky-Dark/master/onesky-dark.user.css
 @advanced color bg-0 "Primary background color" #000000
-@advanced color fg-primary "Primary foreground color" #efefef
-@advanced color fg-primary-5a "Primary foreground color, 50% alpha" #efefef80
-@advanced color fg-disabled "Disabled text primary color" #aaaaaa
+@advanced color fg-primary-emph "Primary foreground color for emphasis" #ffffffdf
+@advanced color fg-primary "Primary foreground color" #ffffff9a
+@advanced color fg-disabled "Disabled text primary color" #ffffff61
 @advanced color bg-1 "Level 1 background color" #101010
 @advanced color bg-2 "Level 2 background color" #2a2a2a
 @advanced color bg-3 "Level 3 background color" #5a5a5a
@@ -46,326 +46,32 @@
 @advanced color error "Error color" #cf5151
 ==/UserStyle== */
 @-moz-document domain("oneskyapp.com") {
-
-    html,
-    body,
-    main,
-    .scheme-9 {
-        background: /*[[bg-0]]*/
-        !important;
+    body {
+        color: /*[[fg-primary]]*/;
+        background: /*[[bg-0]]*/;
     }
 
-    html,
-    body,
-    main,
-    table,
-    tbody,
-    div,
-    nav,
-    td,
-    tr,
-    li,
-    ul,
-    a,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    .dropdown-menu .dropdown-menu-link,
-    .select-language .dropdown-toggle,
-    .dropdown-menu > li > a,
-    .dashboard-unit .unit-title .site-stats a,
-    .narrow-row .language-td .language-float-unit h3,
-    ul.feed-content li.feed-item .feed-body,
-    ul.nav li.dropdown > ul.dropdown-menu .nav-header,
-    textarea,
-    input[type="text"],
-    input[type="password"],
-    input[type="datetime"],
-    input[type="datetime-local"],
-    input[type="date"],
-    input[type="month"],
-    input[type="time"],
-    input[type="week"],
-    input[type="number"],
-    input[type="email"],
-    input[type="url"],
-    input[type="search"],
-    input[type="tel"],
-    input[type="color"],
-    .uneditable-input,
-    .list-post-item .panel-body {
+    /* SECTION: Left column nav */
+
+    .o-column--left {
+        background: /*[[bg-1]]*/
+    }
+
+    .c-project-navListItemLink:hover,
+    .c-project-navListItemLink:focus {
+        background: /*[[bg-2]]*/
+    }
+
+    .c-project-navHeader {
+        color: /*[[fg-primary-emph]]*/;
+    }
+
+    .c-project-navListItemLink {
         color: /*[[fg-primary]]*/;
     }
-
-    .black-txt {
-        color: /*[[fg-primary]]*/
-        !important;
-    }
-
-    html,
-    body,
-    main,
-    table,
-    tbody,
-    div,
-    nav,
-    td,
-    tr,
-    li,
-    ul,
-    a,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    .btn,
-    .btn-panel,
-    .border-bottom,
-    .dropdown-menu .dropdown-menu-link,
-    .dropdown-menu > li > a,
-    .dashboard-unit .unit-title .site-stats a,
-    .narrow-row .language-td .language-float-unit h3,
-    ul.feed-content li.feed-item .feed-body,
-    ul.nav li.dropdown > ul.dropdown-menu .nav-header,
-    .panel-card > .panel-header .bevel,
-    .panel-card > .panel-header .column:first-child,
-    .panel-card > .panel-header .custom-checkbox-label,
-    .panel-card > .panel-header .bevel-right,
-    input[type="email"],
-    input[type="number"],
-    input[type="password"],
-    input[type="search"],
-    input[type="tel"],
-    input[type="text"],
-    input[type="url"],
-    input[type="color"],
-    input[type="date"],
-    input[type="datetime"],
-    input[type="datetime-local"],
-    input[type="month"],
-    input[type="time"],
-    input[type="week"],
-    textarea,
-    .input-append .add-on,
-    .input-prepend .add-on {
-        text-shadow: none !important;
-        box-shadow: none !important;
-    }
-
-    main,
-    table,
-    tbody,
-    div,
-    nav,
-    td,
-    tr,
-    li,
-    ul,
-    .tag,
-    .kbd-wrap,
-    .border-bottom,
-    .border-bottom,
-    .label-block,
-    .badge,
-    .panel-card,
-    div.dashboard-unit,
-    tr.narrow-row > *,
-    .panel-card > .panel-header .bevel,
-    .panel-card > .panel-header .column:first-child,
-    .panel-card > .panel-header .custom-checkbox-label,
-    .panel-card > .panel-header .bevel-right,
-    input[type="email"],
-    input[type="number"],
-    input[type="password"],
-    input[type="search"],
-    input[type="tel"],
-    input[type="text"],
-    input[type="url"],
-    input[type="color"],
-    input[type="date"],
-    input[type="datetime"],
-    input[type="datetime-local"],
-    input[type="month"],
-    input[type="time"],
-    input[type="week"],
-    textarea,
-    .btn,
-    .btn-panel,
-    .form-side-container-comment,
-    .input-append .add-on,
-    .input-prepend .add-on,
-    .narrow-row td:first-child,
-    .narrow-row td:last-child,
-    .narrow-header th:first-child,
-    .narrow-header th:last-child,
-    .table-language-dashboard thead th,
-    .table-glossary-dashboard thead th,
-    .table-language-select thead th,
-    .form-search-phrase .link,
-    .form-search-phrase .admin-batch-actions .close,
-    .admin-batch-actions .form-search-phrase .close {
-        border-color: /*[[bg-0]]*/
-        !important;
-    }
-
-    .label,
-    .tag,
-    .kbd-wrap,
-    .icon.icon-check-square-o,
-    .dashboard-unit .unit-title .site-stats strong {
-        color: /*[[fg-disabled]]*/
-    }
-
-    .icon {
-        color: /*[[fg-primary-5a]]*/
-        !important;
-    }
-
-    div.modal.fade.in,
-    div.modal-backdrop.in {
-        background: /*[[bg-3-4a]]*/
-        !important;
-    }
-
-    .icon:hover .main-header .btn-group-project .btn-group-item .btn-project:hover,
-    .main-header .btn-group-project .btn-group-item .btn-project:focus {
-        color: /*[[ac-primary]]*/
-        !important
-    }
-
-    .sub-header .main-navigation li.active a,
-    .nav-tabs-justified-string-meta > li.active a {
-        background: /*[[ac-primary-alt]]*/
-        !important;
-        color: /*[[fg-primary]]*/
-        !important;
-    }
-
-    .popover-title,
-    .label,
-    .tag,
-    .kbd-wrap,
-    .badge {
-        background: /*[[bg-0]]*/
-        !important
-    }
-
-    input,
-    textarea,
-    ul,
-    tr,
-    .well,
-    .main-header,
-    .sub-header,
-    .content-box-subheader,
-    .content-box-body-content,
-    .popover,
-    .popover-content,
-    .add-on,
-    .tab-content-string-meta-container,
-    .panel-card,
-    .project-nav-phrase-meta,
-    .panel-card > .panel-header,
-    .c-project-navListItemLink:hover,
-    .dashboard-unit.ost-dashboard-helpful-articles .row-fluid {
+    
+    /* SECTION: Phrases page */
+    .project-nav-phrase-meta {
         background: /*[[bg-1]]*/
-        !important
-    }
-
-    .btn {
-        background: /*[[bg-1]]*/
-        !important;
-        color: /*[[fg-primary]]*/
-        !important
-    }
-
-    thead,
-    .tab-pane,
-    .dropdown-menu,
-    .feed-more,
-    .o-column,
-    .label-block,
-    .form-side-container-comment,
-    .list-post-item,
-    .o-column li,
-    .o-column ul,
-    .content-box .content-box-header,
-    .panel-card > .panel-body,
-    .panel-card.active > .panel-body,
-    .table-language-dashboard thead th,
-    .table-glossary-dashboard thead th,
-    .table-language-select thead th,
-    .modal-find-and-replace .form {
-        background: /*[[bg-2]]*/
-        !important
-    }
-
-    .c-headerSub,
-    .slide-switch-off,
-    .modal,
-    .modal-dialog,
-    .modal-header,
-    .modal-footer,
-    .modal-content,
-    .dashed-zone,
-    .list-search-results,
-    ul.dropdown-menu.nav-right-dropdown-menu,
-    ul.dropdown-menu.nav-right-dropdown-menu li,
-    .panel-body.padding > ul {
-        background: /*[[bg-3]]*/
-        !important
-    }
-
-    li.c-breadcrumb-item,
-    .c-breadcrumb-link,
-    .row-fluid.subtitle-box {
-        background: #00000000 !important;
-    }
-
-    li.c-breadcrumb-item,
-    .c-breadcrumb-link {
-        color: /*[[fg-primary]]*/
-        !important;
-    }
-
-    #loading {
-        background: /*[[bg-1-6a]]*/
-        !important
-    }
-
-    .main-nav,
-    .dropdown-toggle.brand,
-    ul.nav .dropdown {
-        background: /*[[ac-primary]]*/
-        !important;
-    }
-
-    .box,
-    .box-note,
-    .dashboard-unit .feed-notice-content a,
-    .dashboard-unit .feed-notice-content,
-    .dashboard-unit .feed-notice-content h3 {
-        background: /*[[ac-secondary]]*/;
-        color: /*[[ac-secondary-alt]]*/
-    }
-
-    .feed-notice {
-        background: /*[[ac-secondary-alt]]*/
-    }
-
-    .btn-group-checkbox .custom-checkbox-icon .icon {
-        opacity: 1;
-    }
-
-    .label-important,
-    .badge-important,
-    .alert {
-        background: /*[[error]]*/
-        !important;
     }
 }
