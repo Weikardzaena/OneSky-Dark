@@ -1,0 +1,370 @@
+/* ==UserStyle==
+@name           OneSky
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+@advanced color bg-0 "Primary background color" #000000
+@advanced color fg-primary "Primary foreground color" #efefef
+@advanced color fg-primary-5a "Primary foreground color, 50% alpha" #efefef80
+@advanced color fg-disabled "Disabled text primary color" #aaaaaa
+@advanced color bg-1 "Level 1 background color" #101010
+@advanced color bg-2 "Level 2 background color" #2a2a2a
+@advanced color bg-3 "Level 3 background color" #5a5a5a
+@advanced color bg-1-1a "Level 1 background color, semi-transparent" #1010101a
+@advanced color bg-1-2a "Level 1 background color, semi-transparent" #10101033
+@advanced color bg-1-3a "Level 1 background color, semi-transparent" #1010104d
+@advanced color bg-1-4a "Level 1 background color, semi-transparent" #10101066
+@advanced color bg-1-5a "Level 1 background color, semi-transparent" #10101080
+@advanced color bg-1-6a "Level 1 background color, semi-transparent" #10101099
+@advanced color bg-1-7a "Level 1 background color, semi-transparent" #101010b3
+@advanced color bg-1-8a "Level 1 background color, semi-transparent" #101010cc
+@advanced color bg-1-9a "Level 1 background color, semi-transparent" #101010e6
+@advanced color bg-2-1a "Level 2 background color, semi-transparent" #2a2a2a1a
+@advanced color bg-2-2a "Level 2 background color, semi-transparent" #2a2a2a33
+@advanced color bg-2-3a "Level 2 background color, semi-transparent" #2a2a2a4d
+@advanced color bg-2-4a "Level 2 background color, semi-transparent" #2a2a2a66
+@advanced color bg-2-5a "Level 2 background color, semi-transparent" #2a2a2a80
+@advanced color bg-2-6a "Level 2 background color, semi-transparent" #2a2a2a99
+@advanced color bg-2-7a "Level 2 background color, semi-transparent" #2a2a2ab3
+@advanced color bg-2-8a "Level 2 background color, semi-transparent" #2a2a2acc
+@advanced color bg-2-9a "Level 2 background color, semi-transparent" #2a2a2ae6
+@advanced color bg-3-1a "Level 3 background color, semi-transparent" #5a5a5a1a
+@advanced color bg-3-2a "Level 3 background color, semi-transparent" #5a5a5a33
+@advanced color bg-3-3a "Level 3 background color, semi-transparent" #5a5a5a4d
+@advanced color bg-3-4a "Level 3 background color, semi-transparent" #5a5a5a66
+@advanced color bg-3-5a "Level 3 background color, semi-transparent" #5a5a5a80
+@advanced color bg-3-6a "Level 3 background color, semi-transparent" #5a5a5a99
+@advanced color bg-3-7a "Level 3 background color, semi-transparent" #5a5a5ab3
+@advanced color bg-3-8a "Level 3 background color, semi-transparent" #5a5a5acc
+@advanced color bg-3-9a "Level 3 background color, semi-transparent" #5a5a5ae6
+@advanced color ac-primary "Primary accent color" #2ea8e6
+@advanced color ac-primary-alt "Alt primary accent color" #338a75
+@advanced color ac-secondary "Secondary accent color" #bf6594
+@advanced color ac-secondary-alt "Alt secondary accent color" #541d4c
+@advanced color error "Error color" #cf5151
+==/UserStyle== */
+@-moz-document domain("oneskyapp.com") {
+
+    html,
+    body,
+    main,
+    .scheme-9 {
+        background: /*[[bg-0]]*/
+        !important;
+    }
+
+    html,
+    body,
+    main,
+    table,
+    tbody,
+    div,
+    nav,
+    td,
+    tr,
+    li,
+    ul,
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .dropdown-menu .dropdown-menu-link,
+    .select-language .dropdown-toggle,
+    .dropdown-menu > li > a,
+    .dashboard-unit .unit-title .site-stats a,
+    .narrow-row .language-td .language-float-unit h3,
+    ul.feed-content li.feed-item .feed-body,
+    ul.nav li.dropdown > ul.dropdown-menu .nav-header,
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    .uneditable-input,
+    .list-post-item .panel-body {
+        color: /*[[fg-primary]]*/;
+    }
+
+    .black-txt {
+        color: /*[[fg-primary]]*/
+        !important;
+    }
+
+    html,
+    body,
+    main,
+    table,
+    tbody,
+    div,
+    nav,
+    td,
+    tr,
+    li,
+    ul,
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .btn,
+    .btn-panel,
+    .border-bottom,
+    .dropdown-menu .dropdown-menu-link,
+    .dropdown-menu > li > a,
+    .dashboard-unit .unit-title .site-stats a,
+    .narrow-row .language-td .language-float-unit h3,
+    ul.feed-content li.feed-item .feed-body,
+    ul.nav li.dropdown > ul.dropdown-menu .nav-header,
+    .panel-card > .panel-header .bevel,
+    .panel-card > .panel-header .column:first-child,
+    .panel-card > .panel-header .custom-checkbox-label,
+    .panel-card > .panel-header .bevel-right,
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="url"],
+    input[type="color"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    textarea,
+    .input-append .add-on,
+    .input-prepend .add-on {
+        text-shadow: none !important;
+        box-shadow: none !important;
+    }
+
+    main,
+    table,
+    tbody,
+    div,
+    nav,
+    td,
+    tr,
+    li,
+    ul,
+    .tag,
+    .kbd-wrap,
+    .border-bottom,
+    .border-bottom,
+    .label-block,
+    .badge,
+    .panel-card,
+    div.dashboard-unit,
+    tr.narrow-row > *,
+    .panel-card > .panel-header .bevel,
+    .panel-card > .panel-header .column:first-child,
+    .panel-card > .panel-header .custom-checkbox-label,
+    .panel-card > .panel-header .bevel-right,
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="url"],
+    input[type="color"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    textarea,
+    .btn,
+    .btn-panel,
+    .form-side-container-comment,
+    .input-append .add-on,
+    .input-prepend .add-on,
+    .narrow-row td:first-child,
+    .narrow-row td:last-child,
+    .narrow-header th:first-child,
+    .narrow-header th:last-child,
+    .table-language-dashboard thead th,
+    .table-glossary-dashboard thead th,
+    .table-language-select thead th,
+    .form-search-phrase .link,
+    .form-search-phrase .admin-batch-actions .close,
+    .admin-batch-actions .form-search-phrase .close {
+        border-color: /*[[bg-0]]*/
+        !important;
+    }
+
+    .label,
+    .tag,
+    .kbd-wrap,
+    .icon.icon-check-square-o,
+    .dashboard-unit .unit-title .site-stats strong {
+        color: /*[[fg-disabled]]*/
+    }
+
+    .icon {
+        color: /*[[fg-primary-5a]]*/
+        !important;
+    }
+
+    div.modal.fade.in,
+    div.modal-backdrop.in {
+        background: /*[[bg-3-4a]]*/
+        !important;
+    }
+
+    .icon:hover .main-header .btn-group-project .btn-group-item .btn-project:hover,
+    .main-header .btn-group-project .btn-group-item .btn-project:focus {
+        color: /*[[ac-primary]]*/
+        !important
+    }
+
+    .sub-header .main-navigation li.active a,
+    .nav-tabs-justified-string-meta > li.active a {
+        background: /*[[ac-primary-alt]]*/
+        !important;
+        color: /*[[fg-primary]]*/
+        !important;
+    }
+
+    .popover-title,
+    .label,
+    .tag,
+    .kbd-wrap,
+    .badge {
+        background: /*[[bg-0]]*/
+        !important
+    }
+
+    input,
+    textarea,
+    ul,
+    tr,
+    .well,
+    .main-header,
+    .sub-header,
+    .content-box-subheader,
+    .content-box-body-content,
+    .popover,
+    .popover-content,
+    .add-on,
+    .tab-content-string-meta-container,
+    .panel-card,
+    .project-nav-phrase-meta,
+    .panel-card > .panel-header,
+    .c-project-navListItemLink:hover,
+    .dashboard-unit.ost-dashboard-helpful-articles .row-fluid {
+        background: /*[[bg-1]]*/
+        !important
+    }
+
+    .btn {
+        background: /*[[bg-1]]*/
+        !important;
+        color: /*[[fg-primary]]*/
+        !important
+    }
+
+    thead,
+    .tab-pane,
+    .dropdown-menu,
+    .feed-more,
+    .o-column,
+    .label-block,
+    .form-side-container-comment,
+    .list-post-item,
+    .o-column li,
+    .o-column ul,
+    .content-box .content-box-header,
+    .panel-card > .panel-body,
+    .panel-card.active > .panel-body,
+    .table-language-dashboard thead th,
+    .table-glossary-dashboard thead th,
+    .table-language-select thead th,
+    .modal-find-and-replace .form {
+        background: /*[[bg-2]]*/
+        !important
+    }
+
+    .c-headerSub,
+    .slide-switch-off,
+    .modal,
+    .modal-dialog,
+    .modal-header,
+    .modal-footer,
+    .modal-content,
+    .dashed-zone,
+    .list-search-results,
+    ul.dropdown-menu.nav-right-dropdown-menu,
+    ul.dropdown-menu.nav-right-dropdown-menu li,
+    .panel-body.padding > ul {
+        background: /*[[bg-3]]*/
+        !important
+    }
+
+    li.c-breadcrumb-item,
+    .c-breadcrumb-link,
+    .row-fluid.subtitle-box {
+        background: #00000000 !important;
+    }
+
+    li.c-breadcrumb-item,
+    .c-breadcrumb-link {
+        color: /*[[fg-primary]]*/
+        !important;
+    }
+
+    #loading {
+        background: /*[[bg-1-6a]]*/
+        !important
+    }
+
+    .main-nav,
+    .dropdown-toggle.brand,
+    ul.nav .dropdown {
+        background: /*[[ac-primary]]*/
+        !important;
+    }
+
+    .box,
+    .box-note,
+    .dashboard-unit .feed-notice-content a,
+    .dashboard-unit .feed-notice-content,
+    .dashboard-unit .feed-notice-content h3 {
+        background: /*[[ac-secondary]]*/;
+        color: /*[[ac-secondary-alt]]*/
+    }
+
+    .feed-notice {
+        background: /*[[ac-secondary-alt]]*/
+    }
+
+    .btn-group-checkbox .custom-checkbox-icon .icon {
+        opacity: 1;
+    }
+
+    .label-important,
+    .badge-important,
+    .alert {
+        background: /*[[error]]*/
+        !important;
+    }
+}
