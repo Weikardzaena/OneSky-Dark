@@ -234,6 +234,15 @@
         border-color: /*[[ac-primary]]*/
     }
 
+    .slide-switch {
+        background: /*[[bg-9]]*/;
+        border-color: /*[[bg-9]]*/
+    }
+
+    .slide-switch .slide-switch-on {
+        background: /*[[ac-primary-alt]]*/
+    }
+
     table,
     thead {
         background: /*[[bg-0]]*/
@@ -279,6 +288,10 @@
 
     .c-project-navListItemLink {
         color: /*[[fg-primary]]*/;
+    }
+
+    .c-project-navListItem.is-active .c-project-navListItemLink {
+        color: /*[[ac-primary]]*/
     }
 
     .c-project-navListItem.has-icon-button:hover,
@@ -663,5 +676,38 @@
 
     .project-nav-phrase-meta-list a {
         color: /*[[fg-primary]]*/
+    }
+
+    /* SECTION: Glossary */
+    .project-nav-navigation,
+    .table-language-select td {
+        background: /*[[bg-2]]*/
+    }
+
+    .table-language-select .narrow-blocked-row td {
+        background: /*[[ac-secondary]]*/
+    }
+
+    .table-language-select .narrow-language-show-more .show-more {
+        background: /*[[ac-primary]]*/
+    }
+
+    .project-nav-navigation .primary-list .primary-list-item-link {
+        color: /*[[fg-primary]]*/
+    }
+
+    .project-nav-navigation,
+    .project-nav-navigation .primary-list .primary-list-item {
+        border-color: /*[[bg-9]]*/
+    }
+
+    .project-nav-navigation .primary-list .active {
+        border-bottom-color: /*[[ac-primary]]*/
+    }
+
+    .project-nav-navigation .primary-list .primary-list-item-link:hover,
+    .project-nav-navigation .primary-list .primary-list-item-link:focus {
+        color: /*[[fg-primary-emph]]*/;
+        background: /*[[bg-3]]*/
     }
 }
