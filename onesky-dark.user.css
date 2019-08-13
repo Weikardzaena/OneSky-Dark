@@ -9,37 +9,15 @@
 @advanced color fg-primary-emph "Primary foreground color for emphasis" #ffffffdf
 @advanced color fg-primary "Primary foreground color" #ffffff9a
 @advanced color fg-disabled "Disabled text primary color" #ffffff61
-@advanced color bg-1 "Level 1 background color" #101010
-@advanced color bg-2 "Level 2 background color" #2a2a2a
-@advanced color bg-3 "Level 3 background color" #5a5a5a
-@advanced color bg-4 "Level 4 background color" #777777
-@advanced color bg-1-1a "Level 1 background color 10% alpha" #1010101a
-@advanced color bg-1-2a "Level 1 background color 20% alpha" #10101033
-@advanced color bg-1-3a "Level 1 background color 30% alpha" #1010104d
-@advanced color bg-1-4a "Level 1 background color 40% alpha" #10101066
-@advanced color bg-1-5a "Level 1 background color 50% alpha" #10101080
-@advanced color bg-1-6a "Level 1 background color 60% alpha" #10101099
-@advanced color bg-1-7a "Level 1 background color 70% alpha" #101010b3
-@advanced color bg-1-8a "Level 1 background color 80% alpha" #101010cc
-@advanced color bg-1-9a "Level 1 background color 90% alpha" #101010e6
-@advanced color bg-2-1a "Level 2 background color 10% alpha" #2a2a2a1a
-@advanced color bg-2-2a "Level 2 background color 20% alpha" #2a2a2a33
-@advanced color bg-2-3a "Level 2 background color 30% alpha" #2a2a2a4d
-@advanced color bg-2-4a "Level 2 background color 40% alpha" #2a2a2a66
-@advanced color bg-2-5a "Level 2 background color 50% alpha" #2a2a2a80
-@advanced color bg-2-6a "Level 2 background color 60% alpha" #2a2a2a99
-@advanced color bg-2-7a "Level 2 background color 70% alpha" #2a2a2ab3
-@advanced color bg-2-8a "Level 2 background color 80% alpha" #2a2a2acc
-@advanced color bg-2-9a "Level 2 background color 90% alpha" #2a2a2ae6
-@advanced color bg-3-1a "Level 3 background color 10% alpha" #5a5a5a1a
-@advanced color bg-3-2a "Level 3 background color 20% alpha" #5a5a5a33
-@advanced color bg-3-3a "Level 3 background color 30% alpha" #5a5a5a4d
-@advanced color bg-3-4a "Level 3 background color 40% alpha" #5a5a5a66
-@advanced color bg-3-5a "Level 3 background color 50% alpha" #5a5a5a80
-@advanced color bg-3-6a "Level 3 background color 60% alpha" #5a5a5a99
-@advanced color bg-3-7a "Level 3 background color 70% alpha" #5a5a5ab3
-@advanced color bg-3-8a "Level 3 background color 80% alpha" #5a5a5acc
-@advanced color bg-3-9a "Level 3 background color 90% alpha" #5a5a5ae6
+@advanced color bg-1 "Level 1 background color" #ffffff0d
+@advanced color bg-2 "Level 2 background color" #ffffff12
+@advanced color bg-3 "Level 3 background color" #ffffff15
+@advanced color bg-4 "Level 4 background color" #ffffff17
+@advanced color bg-5 "Level 5 background color" #ffffff1c
+@advanced color bg-6 "Level 6 background color" #ffffff1f
+@advanced color bg-7 "Level 7 background color" #ffffff24
+@advanced color bg-8 "Level 8 background color" #ffffff27
+@advanced color bg-9 "Level 9 background color" #ffffff29
 @advanced color ac-primary "Primary accent color" #2ea8e6
 @advanced color ac-primary-alt "Alt primary accent color" #338a75
 @advanced color ac-secondary "Secondary accent color" #bf6594
@@ -179,6 +157,44 @@
     .dashboard-unit,
     .dashboard-unit .unit-title,
     ul.feed-content li.feed-item {
+        border-color: /*[[bg-0]]*/
+    }
+
+    /* SECTION: All Projects */
+    .content-box .content-box-header .content-box-header-content .input-prepend .add-on {
+        background: /*[[bg-0]]*/
+    }
+
+    .content-box-body,
+    .content-box .content-box-header {
+        background: /*[[bg-1]]*/
+    }
+
+    .platform-box {
+        background: /*[[bg-4]]*/
+    }
+
+    .add-platform-box {
+        background: /*[[bg-2]]*/
+    }
+
+    .platform-box-content .platform-data-box {
+        background: /*[[bg-4]]*/
+    }
+
+    .platform-box .platform-name a,
+    .platform-box .platform-icon a,
+    .platform-box-content .platform-data-box .platform-data-time,
+    .platform-box-content .platform-data-box .platform-data .platform-data-title,
+    .platform-box-content .platform-data-box .platform-data {
+        color: /*[[fg-primary]]*/
+    }
+
+    .platform-box,
+    .content-box-body,
+    .content-box .content-box-header,
+    .platform-box-content .platform-data-box,
+    .content-box .content-box-header .content-box-header-content .input-prepend .add-on {
         border-color: /*[[bg-0]]*/
     }
 }
