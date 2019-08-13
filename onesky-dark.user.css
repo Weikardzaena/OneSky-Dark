@@ -43,9 +43,11 @@
     input[type="search"],
     input[type="tel"],
     input[type="color"],
-    .uneditable-input {
+    .uneditable-input,
+    .label {
         color: /*[[fg-primary]]*/;
-        background: /*[[bg-0]]*/;
+        background: /*[[bg-0]]*/
+        !important;
     }
 
     textarea,
@@ -63,17 +65,71 @@
     input[type="search"],
     input[type="tel"],
     input[type="color"],
-    .uneditable-input {
+    .uneditable-input,
+    .table-bordered,
+    .modal,
+    .modal-footer,
+    .modal-header,
+    .o-column--left,
+    .content-box .content-box-subheader,
+    .narrow-header th,
+    .narrow-header th:last-child,
+    .narrow-header th:first-child,
+    .narrow-row td,
+    .narrow-row td:first-child,
+    .narrow-row td:last-child {
         border-color: /*[[bg-0]]*/
+        !important;
+    }
+
+    .modal {
+        background: /*[[bg-0]]*/
+    }
+
+    .modal-header,
+    .modal-footer,
+    .modal textarea,
+    .modal input[type="text"],
+    .modal input[type="password"],
+    .modal input[type="datetime"],
+    .modal input[type="datetime-local"],
+    .modal input[type="date"],
+    .modal input[type="month"],
+    .modal input[type="time"],
+    .modal input[type="week"],
+    .modal input[type="number"],
+    .modal input[type="email"],
+    .modal input[type="url"],
+    .modal input[type="search"],
+    .modal input[type="tel"],
+    .modal input[type="color"],
+    .modal .uneditable-input {
+        background: /*[[bg-3]]*/
+        !important;
     }
 
     h1,
     h2,
     h3,
     h4,
-    h5 h6,
+    h5,
+    h6,
     .title-box h1 {
         color: /*[[fg-primary-emph]]*/
+    }
+
+    .caret,
+    h1 small,
+    h2 small,
+    h3 small,
+    h4 small,
+    h5 small,
+    h6 small {
+        color: /*[[fg-primary]]*/
+    }
+
+    .caret {
+        border-top: 4px solid/*[[fg-primary]]*/;
     }
 
     * {
@@ -100,6 +156,12 @@
     .btn-success {
         background: /*[[ac-primary-alt]]*/;
         border-color: /*[[ac-primary-alt]]*/
+    }
+
+    table,
+    thead {
+        background: /*[[bg-0]]*/
+        !important;
     }
 
     /* SECTION: Sign-in */
@@ -196,5 +258,38 @@
     .platform-box-content .platform-data-box,
     .content-box .content-box-header .content-box-header-content .input-prepend .add-on {
         border-color: /*[[bg-0]]*/
+    }
+
+    /* SECTION: Project Overview */
+    .table-translation-dashboard > tbody > tr {
+        background: /*[[bg-3]]*/
+    }
+
+    .table-language-dashboard thead th,
+    .table-glossary-dashboard thead th,
+    .table-language-select thead th {
+        background: /*[[bg-6]]*/
+    }
+
+    .content-box .content-box-subheader,
+    .c-headerSub {
+        background: /*[[bg-9]]*/
+    }
+
+    .subtitle-box h2,
+    .narrow-row .language-td .language-float-unit h3,
+    .c-breadcrumb-item.is-active .c-breadcrumb-link {
+        color: /*[[fg-primary-emph]]*/
+    }
+
+    .narrow-row .stats-td .dropdown-toggle,
+    .narrow-row .approved-td small,
+    .narrow-row .translated-td small,
+    .narrow-row .resolved-td small {
+        color: /*[[fg-primary]]*/
+    }
+
+    .breadcrumb li::after {
+        color: /*[[fg-disabled]]*/
     }
 }
