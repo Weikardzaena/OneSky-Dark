@@ -92,6 +92,7 @@
     .modal,
     .modal-dialog,
     .badge,
+    .dropdown-menu,
     .popover.top.in.fade {
         background: /*[[bg-0]]*/;
         border-color: /*[[ac-primary]]*/
@@ -169,6 +170,27 @@
     .custom-checklabel .custom-checkbox[type="checkbox"]:checked + .custom-checkbox-label .custom-checklabel-text,
     .custom-checklabel .custom-checkbox[type="radio"]:checked + .custom-checkbox-label .custom-checklabel-text {
         color: /*[[ac-primary]]*/
+    }
+
+    .dropdown-menu input[type="search"],
+    .dropdown-menu > li a,
+    .dropdown-menu > li button {
+        color: /*[[fg-primary]]*/;
+        background: /*[[bg-3]]*/
+        !important;
+    }
+
+    .dropdown-menu > li.active a,
+    .dropdown-menu > li.active button {
+        color: /*[[fg-primary-emph]]*/
+    }
+
+    .dropdown-menu > li a:hover,
+    .dropdown-menu > li a:focus,
+    .dropdown-menu > li button:hover,
+    .dropdown-menu > li button:focus {
+        background: /*[[bg-3]]*/;
+        border-color: /*[[bg-3]]*/
     }
 
     .black-txt {
