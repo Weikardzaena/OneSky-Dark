@@ -18,11 +18,11 @@
 @advanced color bg-7 "Level 7 background color" #ffffff24
 @advanced color bg-8 "Level 8 background color" #ffffff27
 @advanced color bg-9 "Level 9 background color" #ffffff29
-@advanced color ac-primary "Primary accent color" #2ea8e6
-@advanced color ac-primary-alt "Alt primary accent color" #338a75
-@advanced color ac-secondary "Secondary accent color" #bf6594
-@advanced color ac-secondary-alt "Alt secondary accent color" #541d4c
-@advanced color error "Error color" #cf5151
+@advanced color ac-primary "Primary accent color" #309fab
+@advanced color ac-primary-alt "Alt primary accent color" #418752
+@advanced color ac-secondary "Secondary accent color" #65496e
+@advanced color error "Error color" #a33e3e
+@advanced color dark-text "Dark text" #111111
 ==/UserStyle== */
 @-moz-document domain("oneskyapp.com") {
 
@@ -44,7 +44,9 @@
     input[type="tel"],
     input[type="color"],
     .uneditable-input,
-    .label {
+    .label,
+    .tag,
+    .kbd-wrap {
         color: /*[[fg-primary]]*/;
         background: /*[[bg-0]]*/
         !important;
@@ -70,7 +72,12 @@
     .modal,
     .modal-footer,
     .modal-header,
+    .border-bottom,
+    .border-top,
     .o-column--left,
+    .kbd-wrap,
+    .badge,
+    .tag,
     .content-box .content-box-subheader,
     .narrow-header th,
     .narrow-header th:last-child,
@@ -82,8 +89,26 @@
         !important;
     }
 
-    .modal {
+    .modal,
+    .modal-dialog,
+    .badge,
+    .popover.top.in.fade {
+        background: /*[[bg-0]]*/;
+        border-color: /*[[ac-primary]]*/
+    }
+
+    .popover .popover-inner .popover-title {
+        color: /*[[fg-primary-emph]]*/;
         background: /*[[bg-0]]*/
+    }
+
+    .popover .popover-inner .popover-content {
+        color: /*[[fg-primary]]*/;
+        background: /*[[bg-0]]*/
+    }
+
+    .badge {
+        color: /*[[ac-primary]]*/
     }
 
     .modal-header,
@@ -138,11 +163,22 @@
     }
 
     a,
-    body a {
+    body a,
+    .custom-checklabel .custom-checkbox[type="checkbox"]:checked + .custom-checkbox-label .custom-checkbox-box,
+    .custom-checklabel .custom-checkbox[type="radio"]:checked + .custom-checkbox-label .custom-checkbox-box,
+    .custom-checklabel .custom-checkbox[type="checkbox"]:checked + .custom-checkbox-label .custom-checklabel-text,
+    .custom-checklabel .custom-checkbox[type="radio"]:checked + .custom-checkbox-label .custom-checklabel-text {
         color: /*[[ac-primary]]*/
     }
 
     .black-txt {
+        color: /*[[fg-primary-emph]]*/
+        !important;
+    }
+
+    .u-userLauncherColor:not([disabled]) {
+        background: /*[[ac-primary]]*/
+        !important;
         color: /*[[fg-primary-emph]]*/
         !important;
     }
@@ -158,10 +194,25 @@
         border-color: /*[[ac-primary-alt]]*/
     }
 
+    .btn.btn-primary,
+    .btn-primary.btn-panel {
+        background: /*[[ac-primary]]*/;
+        border-color: /*[[ac-primary]]*/
+    }
+
     table,
     thead {
         background: /*[[bg-0]]*/
         !important;
+    }
+
+    .fade {
+        background: /*[[bg-9]]*/
+    }
+
+    .alert {
+        background: /*[[error]]*/;
+        color: /*[[fg-primary]]*/
     }
 
     /* SECTION: Sign-in */
@@ -213,7 +264,7 @@
 
     .dashboard-unit .feed-notice-content,
     .dashboard-unit .feed-notice-content h3 {
-        color: /*[[ac-secondary-alt]]*/
+        color: /*[[fg-primary]]*/
     }
 
     .dashboard-unit,
@@ -291,5 +342,131 @@
 
     .breadcrumb li::after {
         color: /*[[fg-disabled]]*/
+    }
+
+    /* SECTION: Project Language */
+    .nav-tabs-justified-string-meta {
+        background: /*[[bg-0]]*/
+    }
+
+    .nav-tabs-justified > li.active,
+    .nav-tabs-justified-string-meta > li.active a,
+    .tab-content-string-meta-container {
+        background: /*[[bg-2]]*/
+    }
+
+    .panel-card-list-meta .form-search-phrase-area input {
+        background: /*[[bg-2]]*/
+        !important;
+    }
+
+    .panel-card,
+    .list-post-item,
+    .panel-card.active > .panel-body {
+        background: /*[[bg-3]]*/
+    }
+
+    .label-block,
+    .form-side-container-comment,
+    .panel-card > .panel-header,
+    .panel-card > .panel-body .glossary {
+        background: /*[[bg-3]]*/
+    }
+
+    .sub-header,
+    .list-post-item.list-post-item-hover:hover,
+    .list-post-item.list-post-item-hover:focus,
+    .sub-header .main-navigation li.active,
+    .sub-header .main-navigation li.active a,
+    .nav-tabs-justified-string-meta > li.active a:hover,
+    .nav-tabs-justified-string-meta > li.active a:focus,
+    .panel-card > .panel-body .glossary:focus,
+    .panel-card > .panel-body .glossary:hover,
+    .list-search-results .list-search-results-item:hover,
+    .list-search-results .list-search-results-item:focus {
+        background: /*[[bg-9]]*/
+    }
+
+    .panel-card > .panel-body .glossary,
+    .panel-card > .panel-body .glossary:focus,
+    .panel-card > .panel-body .glossary:hover {
+        color: /*[[fg-primary-emph]]*/
+    }
+
+    .box-note {
+        color: /*[[fg-primary]]*/;
+        background: /*[[ac-secondary]]*/;
+        border-color: /*[[ac-secondary]]*/
+    }
+
+    .list-tag-clickable .title,
+    .tag-clickable,
+    .list-tag-clickable li > .tag,
+    .list-post-item .panel-body,
+    .sub-header .main-navigation li.active a {
+        color: /*[[fg-primary]]*/
+    }
+
+    .select-language .dropdown-toggle {
+        color: /*[[fg-primary-emph]]*/
+    }
+
+    .list-post.list-post-translation-memory .panel-header .text {
+        color: /*[[fg-disabled]]*/
+    }
+
+    .list-post-item,
+    .panel-card,
+    .label-block,
+    .sub-header,
+    .tab-content-string-meta-container,
+    .panel-card > .panel-header,
+    .list-post .list-post-item:first-child,
+    .list-post .list-post-item:last-child,
+    .sub-header .main-navigation li,
+    .panel-card > .panel-header .bevel,
+    .panel-card > .panel-header .column:first-child,
+    .panel-card > .panel-header .custom-checkbox-label,
+    .panel-card > .panel-header .bevel-right {
+        border-color: /*[[bg-0]]*/
+    }
+
+    .nav-tabs-justified > li.active {
+        border-left-color: /*[[bg-0]]*/;
+        border-right-color: /*[[bg-0]]*/;
+    }
+
+    .custom-checklabel .custom-checkbox-label-icon,
+    .nav-tabs-justified-string-meta > li.active a,
+    .select-language .dropdown-toggle:hover,
+    .select-language .dropdown-toggle:focus {
+        color: /*[[ac-primary]]*/;
+    }
+
+    .nav-tabs-justified-string-meta > li.active {
+        border-color: /*[[ac-primary]]*/;
+    }
+
+    .main-header {
+        background: /*[[ac-primary]]*/
+    }
+
+    .list-post-item-active .panel-title a {
+        color: /*[[ac-primary-alt]]*/
+    }
+
+    .modal-find-and-replace .form {
+        background: /*[[bg-3]]*/;
+        color: /*[[fg-primary]]*/
+    }
+
+    .list-search-results .list-search-results-item .highlight {
+        background: /*[[ac-primary]]*/;
+        color: /*[[dark-text]]*/
+    }
+
+    .list-search-results .list-search-results-item .highlight.highlight-active {
+        background: /*[[ac-primary-alt]]*/;
+        color: /*[[dark-text]]*/
     }
 }
