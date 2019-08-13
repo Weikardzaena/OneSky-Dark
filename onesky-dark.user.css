@@ -79,12 +79,16 @@
     .badge,
     .tag,
     .content-box .content-box-subheader,
+    .table tbody th,
+    .table tbody td,
     .narrow-header th,
     .narrow-header th:last-child,
     .narrow-header th:first-child,
     .narrow-row td,
     .narrow-row td:first-child,
-    .narrow-row td:last-child {
+    .narrow-row td:last-child,
+    .panel-modal > .panel-header,
+    .panel-modal > .panel-footer {
         border-color: /*[[bg-0]]*/
         !important;
     }
@@ -490,5 +494,56 @@
     .list-search-results .list-search-results-item .highlight.highlight-active {
         background: /*[[ac-primary-alt]]*/;
         color: /*[[dark-text]]*/
+    }
+
+    /* SECTION: Project Tasks */
+    .panel-feature-intro {
+        background: /*[[bg-1]]*/;
+        border-color: /*[[ac-primary]]*/
+    }
+
+    .list-post-folder-item,
+    .side-actions-container,
+    .panel-header-bar,
+    .panel-header-filter,
+    .panel-header-bar .custom-check .custom-checkbox-label {
+        border-color: /*[[bg-0]]*/
+    }
+
+    .empty-state,
+    .panel-feature-intro .list-steps p,
+    .empty-state .empty-state-message .icon {
+        color: /*[[fg-primary]]*/
+    }
+
+    .table-dark thead th,
+    .table-light thead th {
+        background: /*[[bg-3]]*/
+    }
+
+    .table-light .highlight {
+        background: /*[[bg-5]]*/
+    }
+
+    .table-light tbody tr:hover,
+    .table-light tbody tr:focus,
+    .list-post-folder-item:hover,
+    .list-post-folder-item:focus,
+    .list-post-folder-item.active {
+        background: /*[[bg-9]]*/
+    }
+
+    .table-dark,
+    .table-light,
+    .table-dark thead th,
+    .table-light thead th {
+        border-color: /*[[bg-0]]*/
+    }
+
+    .side-actions-container,
+    .panel-header-bar,
+    .panel-modal > .panel-header,
+    .panel-modal > .panel-footer {
+        background: /*[[bg-1]]*/
     }
 }
