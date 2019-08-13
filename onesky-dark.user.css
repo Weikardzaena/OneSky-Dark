@@ -329,7 +329,8 @@
 
     .dashboard-unit,
     .dashboard-unit .unit-title,
-    ul.feed-content li.feed-item {
+    ul.feed-content li.feed-item,
+    ol.qa-todo-content li.qa-todo-item {
         border-color: /*[[bg-9]]*/
     }
 
@@ -709,5 +710,32 @@
     .project-nav-navigation .primary-list .primary-list-item-link:focus {
         color: /*[[fg-primary-emph]]*/;
         background: /*[[bg-3]]*/
+    }
+
+    /* SECTION: Settings */
+    .content-box-body-content .tab-content {
+        background: /*[[bg-2]]*/
+    }
+
+    .well {
+        background: /*[[bg-4]]*/
+    }
+
+    #pane-glossary.fade {
+        background: none
+    }
+
+    .ios {
+        color: /*[[fg-primary]]*/;
+        background: /*[[bg-2]]*/
+    }
+
+    .ios[checked="checked"] {
+        background: /*[[ac-primary-alt]]*/
+    }
+
+    .project-box .project-box-header {
+        background: /*[[ac-primary]]*/;
+        border-color: /*[[ac-primary-alt]]*/
     }
 }
