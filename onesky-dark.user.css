@@ -216,6 +216,13 @@
         border-color: /*[[bg-4]]*/
     }
 
+    .btn-group.open .btn.dropdown-toggle,
+    .btn:hover,
+    .btn:focus {
+        background: /*[[bg-9]]*/;
+        color: /*[[fg-primary-emph]]*/
+    }
+
     .btn-success {
         background: /*[[ac-primary-alt]]*/;
         border-color: /*[[ac-primary-alt]]*/
@@ -272,6 +279,11 @@
 
     .c-project-navListItemLink {
         color: /*[[fg-primary]]*/;
+    }
+
+    .c-project-navListItem.has-icon-button:hover,
+    .c-project-navListItem.has-icon-button:focus {
+        background: /*[[bg-9]]*/
     }
 
     /* SECTION: Phrases page */
@@ -623,5 +635,33 @@
 
     .table-dark tbody td > a:hover {
         color: /*[[ac-primary-alt]]*/
+    }
+
+    /* SECTION: Phrases */
+    .phrase-manage-list {
+        background: /*[[bg-2]]*/
+    }
+
+    .phrase-manage-list,
+    .phrase-manage-list-item,
+    .project-nav-phrase-meta {
+        border-color: /*[[bg-9]]*/
+    }
+
+    .subtitle-box h2 {
+        border-left-color: /*[[ac-primary]]*/
+    }
+
+    .narrow-row .phrase-td .clickable,
+    .project-nav-phrase-meta-list .active a {
+        color: /*[[ac-primary]]*/
+    }
+
+    .project-nav-phrase-meta-list .highlight {
+        color: /*[[ac-primary-alt]]*/
+    }
+
+    .project-nav-phrase-meta-list a {
+        color: /*[[fg-primary]]*/
     }
 }
