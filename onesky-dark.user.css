@@ -12,6 +12,7 @@
 @advanced color bg-1 "Level 1 background color" #101010
 @advanced color bg-2 "Level 2 background color" #2a2a2a
 @advanced color bg-3 "Level 3 background color" #5a5a5a
+@advanced color bg-4 "Level 4 background color" #777777
 @advanced color bg-1-1a "Level 1 background color 10% alpha" #1010101a
 @advanced color bg-1-2a "Level 1 background color 20% alpha" #10101033
 @advanced color bg-1-3a "Level 1 background color 30% alpha" #1010104d
@@ -46,13 +47,90 @@
 @advanced color error "Error color" #cf5151
 ==/UserStyle== */
 @-moz-document domain("oneskyapp.com") {
-    body {
+
+    /* SECTION: Global */
+    body,
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    .uneditable-input {
         color: /*[[fg-primary]]*/;
         background: /*[[bg-0]]*/;
     }
 
-    /* SECTION: Left column nav */
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    .uneditable-input {
+        border-color: /*[[bg-0]]*/
+    }
 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 h6,
+    .title-box h1 {
+        color: /*[[fg-primary-emph]]*/
+    }
+
+    * {
+        text-shadow: none !important;
+        box-shadow: none !important;
+    }
+
+    a,
+    body a {
+        color: /*[[ac-primary]]*/
+    }
+
+    .black-txt {
+        color: /*[[fg-primary-emph]]*/
+        !important;
+    }
+
+    .btn {
+        background: /*[[bg-4]]*/;
+        color: /*[[fg-primary-emph]]*/;
+        border-color: /*[[bg-4]]*/
+    }
+
+    .btn-success {
+        background: /*[[ac-primary-alt]]*/;
+        border-color: /*[[ac-primary-alt]]*/
+    }
+
+    /* SECTION: Sign-in */
+    .auth-content,
+    .auth-form .hr-block .or-block {
+        background: /*[[bg-2]]*/
+    }
+
+    /* SECTION: Left column nav */
     .o-column--left {
         background: /*[[bg-1]]*/
     }
@@ -69,9 +147,38 @@
     .c-project-navListItemLink {
         color: /*[[fg-primary]]*/;
     }
-    
+
     /* SECTION: Phrases page */
     .project-nav-phrase-meta {
         background: /*[[bg-1]]*/
+    }
+
+    /* SECTION: Dashboard */
+    .dashboard-unit {
+        background: /*[[bg-1]]*/
+    }
+
+    ul.feed-content li.feed-item .feed-more {
+        background: /*[[bg-2]]*/
+    }
+
+    .dashboard-unit .unit-title .site-stat strong,
+    ul.feed-content li.feed-item .feed-body {
+        color: /*[[fg-primary]]*/
+    }
+
+    .dashboard-unit .feed-notice-content {
+        background: /*[[ac-secondary]]*/
+    }
+
+    .dashboard-unit .feed-notice-content,
+    .dashboard-unit .feed-notice-content h3 {
+        color: /*[[ac-secondary-alt]]*/
+    }
+
+    .dashboard-unit,
+    .dashboard-unit .unit-title,
+    ul.feed-content li.feed-item {
+        border-color: /*[[bg-0]]*/
     }
 }
