@@ -89,7 +89,7 @@
     .narrow-row td:last-child,
     .panel-modal > .panel-header,
     .panel-modal > .panel-footer {
-        border-color: /*[[bg-0]]*/
+        border-color: /*[[bg-9]]*/
         !important;
     }
 
@@ -169,6 +169,7 @@
 
     a,
     body a,
+    body a:hover,
     .custom-checklabel .custom-checkbox[type="checkbox"]:checked + .custom-checkbox-label .custom-checkbox-box,
     .custom-checklabel .custom-checkbox[type="radio"]:checked + .custom-checkbox-label .custom-checkbox-box,
     .custom-checklabel .custom-checkbox[type="checkbox"]:checked + .custom-checkbox-label .custom-checklabel-text,
@@ -241,6 +242,14 @@
         color: /*[[fg-primary]]*/
     }
 
+    .alert-info {
+        border-color: /*[[bg-9]]*/
+    }
+
+    .alert p a {
+        color: /*[[ac-primary]]*/
+    }
+
     /* SECTION: Sign-in */
     .auth-content,
     .auth-form .hr-block .or-block {
@@ -296,7 +305,7 @@
     .dashboard-unit,
     .dashboard-unit .unit-title,
     ul.feed-content li.feed-item {
-        border-color: /*[[bg-0]]*/
+        border-color: /*[[bg-9]]*/
     }
 
     /* SECTION: All Projects */
@@ -334,7 +343,7 @@
     .content-box .content-box-header,
     .platform-box-content .platform-data-box,
     .content-box .content-box-header .content-box-header-content .input-prepend .add-on {
-        border-color: /*[[bg-0]]*/
+        border-color: /*[[bg-9]]*/
     }
 
     /* SECTION: Project Overview */
@@ -454,7 +463,7 @@
     .panel-card > .panel-header .column:first-child,
     .panel-card > .panel-header .custom-checkbox-label,
     .panel-card > .panel-header .bevel-right {
-        border-color: /*[[bg-0]]*/
+        border-color: /*[[bg-9]]*/
     }
 
     .nav-tabs-justified > li.active {
@@ -507,7 +516,7 @@
     .panel-header-bar,
     .panel-header-filter,
     .panel-header-bar .custom-check .custom-checkbox-label {
-        border-color: /*[[bg-0]]*/
+        border-color: /*[[bg-9]]*/
     }
 
     .empty-state,
@@ -534,10 +543,8 @@
     }
 
     .table-dark,
-    .table-light,
-    .table-dark thead th,
-    .table-light thead th {
-        border-color: /*[[bg-0]]*/
+    .table-light {
+        border-color: /*[[bg-9]]*/
     }
 
     .side-actions-container,
@@ -545,5 +552,76 @@
     .panel-modal > .panel-header,
     .panel-modal > .panel-footer {
         background: /*[[bg-1]]*/
+    }
+
+    /* SECTION: Collaboration */
+    .content-container-style-invert {
+        background: /*[[bg-2]]*/
+    }
+
+    .block,
+    .tabs > li.active > a,
+    .table-dark thead tr,
+    .table-light thead tr {
+        background: /*[[bg-4]]*/;
+    }
+
+    .list-topic-title,
+    .breadcrumb-block-title,
+    .breadcrumb-block-title .breadcrumb-block-title-item {
+        color: /*[[fg-primary-emph]]*/;
+        border-left-color: /*[[ac-primary]]*/
+    }
+
+    .list-topic-language,
+    .list-topic a,
+    .list-topic-title .string-key,
+    .block-item-list .list a,
+    .tabs > li.active > a,
+    .tabs > li > a,
+    .tabs > li > a:hover,
+    .tabs > li > a:focus {
+        color: /*[[fg-primary]]*/
+    }
+
+    .list-topics .list-hover .list-topic:hover,
+    .list-topics .list-hover .list-topic:focus,
+    .tabs > li.active > a:hover,
+    .tabs > li.active > a:focus,
+    .tabs > li > a:hover,
+    .tabs > li > a:focus {
+        background: /*[[bg-9]]*/
+    }
+
+    .block-item-list .list .active a,
+    .tabs-option > li.active > a,
+    .tabs-option > li.active > .btn,
+    .block-item-list .list a:hover,
+    .block-item-list .list a:active,
+    .list-topic .meta-data-list a,
+    .breadcrumb-block-title a.breadcrumb-block-title-item {
+        color: /*[[ac-primary]]*/;
+        border-left-color: /*[[ac-primary]]*/
+    }
+
+    .tabs,
+    .tabs-option,
+    .list-topic,
+    .content-container-style,
+    .block,
+    .block-link,
+    .list-topic:first-child,
+    .list-topic:only-child,
+    .list-topic:last-child,
+    .table-dark thead th,
+    .table-light thead th,
+    .tabs-option > li > a,
+    .tabs-option > li > .btn,
+    .tabs > li.active {
+        border-color: /*[[bg-9]]*/
+    }
+
+    .table-dark tbody td > a:hover {
+        color: /*[[ac-primary-alt]]*/
     }
 }
